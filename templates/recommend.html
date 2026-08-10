@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendations</title>
+</head>
+<body>
+
+    <h1>🎬 Recommended Movies</h1>
+
+    {% if recommendations %}
+        <ul>
+        {% for movie in recommendations %}
+            <li>{{ movie }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No recommendations found.</p>
+    {% endif %}
+
+    <a href="/">⬅ Back</a>
+
+</body>
+</html>
